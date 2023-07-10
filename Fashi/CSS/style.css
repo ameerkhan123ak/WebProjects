@@ -1,0 +1,688 @@
+body 
+{
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+}
+*
+{
+    box-sizing: border-box;
+}
+
+.container
+{
+    display: flex;
+    margin-bottom: 60px;
+    justify-content: center;
+    margin-top: 50px;
+    width: 100%;
+}
+.nav 
+{
+    height:50px;
+    width: 75%;
+    display: flex;
+}
+.nav .logo
+{
+    display: flex;
+    align-items: center;
+    width: 15%;
+}
+.search-bar 
+{
+    width: 60%;
+    display: flex;
+    align-items: center;
+}
+.search-bar .button 
+{
+    height: 40px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    width: 200px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.search-bar input 
+{
+    height: 45px;
+    width:400px;
+    padding-left:20px;
+    opacity: 0.5;
+}
+.search-bar .search-icon 
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:45px;
+    width: 85px;
+    background-color: orange;
+    color:white;
+    cursor: pointer;
+}
+.search-bar .search-icon:hover 
+{
+    background-color: rgb(238, 182, 78);
+}
+.nav .nav-right 
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    width: 25%;
+    gap: 30px;
+    font-size: 20px;
+}
+.container .cart-hover 
+{
+    height: 400px;
+    width: 300px;
+    position: absolute;
+    left:1050px;
+    top:250px;
+    padding:10px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 300ms ease-in-out;
+    background-color: white;
+}
+.shopping-bag:hover .cart-hover
+{
+    top:120px;
+    visibility: visible;
+    opacity: 1;
+}
+.cart-item img 
+{
+    height:100%;
+}
+.cart-hover .cart-item
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+}
+.cart-hover .cart-item p 
+{
+    color:orange;
+    font-size: 20px;
+    font-weight: 300;
+}
+.cart-hover .cart-item h5
+{
+    color:black;
+    font-size: 15px;
+    font-weight: 100;
+}
+.cart-hover button 
+{
+    width: 100%;
+    margin-top:10px;
+    height:40px;
+    border:none;
+    background-color: orange;
+    font-size: 15px;
+    color:white;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.nav-container 
+{
+    height: 150px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+.nav-bar 
+{
+    height: 100%;
+    width: 70%;
+    background-color: rgb(68, 67, 67);
+    display: flex;
+    flex-direction: column;
+}
+.nav-buttons
+{
+    height: 50%;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    color:white;
+    font-weight: bolder;
+    background-color: rgb(37, 37, 37);
+}
+.department-button
+{
+    display: flex;
+    align-items: center;
+    width: 25%;
+    height: 150%;
+}
+.department-button button 
+{
+    height: 100%;
+    border: none;
+    background-color: transparent;
+    color: white;
+    letter-spacing: 2px;
+    width: 100%;
+    cursor: pointer;
+    transition: 200ms ease-in-out;
+}
+.nav-button-content 
+{
+    background-color: white;
+    color:black;
+    position: absolute;
+    top:270px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    line-height: 25px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 200ms ease-in-out;
+    padding:10px;
+    border:1px solid;
+}
+.department-button:hover .nav-button-content
+{
+    opacity: 1;
+    visibility: visible;
+    top: 230px;
+}
+.nav-button-content p 
+{
+    width: 100%;
+}
+.nav-button-content p:hover 
+{
+    transition: 100ms ease-in-out;
+    cursor: pointer;
+    color:orange;
+}
+.nav-menu
+{
+    height: 50%;
+}
+.nav-main li
+{
+    display: inline-block;
+    padding:28px 25px 23px 25px;
+    cursor: pointer;
+    transition: 200ms ease-in-out;
+}
+.nav-main #home 
+{
+    background-color: orange;
+}
+.nav-main li:hover 
+{
+    background-color: orange;
+}
+.nav-main a 
+{
+    color:white;
+    text-decoration: none;
+    font-weight: 100;
+}
+.nav-menu 
+{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.nav-menu button 
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100px;
+    height: 40px;
+    color:white;
+    background-color: black;
+    border:none;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.swiper
+{
+  height: 700px;
+  width: 100%;
+  background-color: rgb(26, 26, 26);
+}
+.swiper-wrapper .slide-1
+{
+    background-position: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.swiper-wrapper .slide-2
+{
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+}
+.slide-3
+{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.swiper-wrapper .swiper-slide
+{
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.swiper-slide .content 
+{
+    height:500px;
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+}
+.swiper-slide .heading
+{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    color: orange;
+    letter-spacing: 2px;
+}
+.swiper-slide .details
+{
+    text-align: justify;
+    padding:40px;
+}
+.swiper-slide .btn 
+{
+    position: relative;
+    width: 100%;
+    left:310px;
+    bottom:100px;
+}
+.swiper-slide button 
+{
+    border:none;
+    height:50px;
+    width: 200px;
+    background-color: orange;
+    color:white;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.gender-section
+{
+    height: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top:40px;
+}
+.gender-section img 
+{
+    cursor: pointer;
+    width: auto;
+    height: 300px;
+    background-size: cover;
+}
+.men span 
+{
+    position: absolute;
+    right:1270px;
+    top:1250px;
+    background-color: orange;
+    padding:10px 30px;
+    border-radius: 5px;
+    color:white;
+    font-size: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 200ms ease-in-out;
+}
+.men:hover span 
+{
+    opacity: 1;
+    visibility: visible;
+    top:1200px;
+}
+.men:hover img 
+{
+    filter: blur(4px);
+}
+.women span 
+{
+    position: absolute;
+    right:680px;
+    top:1250px;
+    background-color: orange;
+    padding:10px 30px;
+    border-radius: 5px;
+    color:white;
+    font-size: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 200ms ease-in-out;
+}
+.women:hover span 
+{
+    opacity: 1;
+    visibility: visible;
+    top:1200px;
+}
+.women:hover img 
+{
+    filter: blur(4px);
+}
+.kid span 
+{
+    position: absolute;
+    top:1250px;
+    right:170px;
+    background-color: orange;
+    padding:10px 30px;
+    border-radius: 5px;
+    color:white;
+    font-size: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 200ms ease-in-out;
+}
+.kid:hover span 
+{
+    opacity: 1;
+    visibility: visible;
+    top:1200px;
+}
+.kid:hover img 
+{
+    filter: blur(4px);
+}
+.women-section
+{
+    height:600px;
+    width: 100%;
+    display: flex;
+    padding:20px;
+}
+.women-section .aside-1
+{
+    width: 30%;
+    height: 100%;
+    background-image: url(/assests/women\ asde.avif);
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-position: center;
+}
+.women-section .main 
+{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.main .top-section
+{
+    height: 10%;
+    width: 100%;
+}
+.main .top-section ul 
+{
+    margin-left: 250px;
+}
+.main .top-section li 
+{
+    display: inline-block;
+    text-align: center;
+    font-size: 20px;
+    padding:0px 20px;
+}
+.women-section .main .swiper-main
+{
+    height: 100%;
+    width: 100%;
+}
+.swiper-main 
+{
+    height: 100%;
+    width: 100%;
+    background-color: red;
+}
+.swiper-main .swiper-slide 
+{
+    background-color: red;
+}
+.swiper-wrapper{
+    padding:0px 20px;
+}
+.swiper-wrapper .slide-1
+{
+    background-image: url(/assests/product1.webp);
+    margin:10px;
+    height: 100%;
+    width: 90%;
+    background-position: center;
+    background-image: cover;
+    background-repeat: no-repeat;
+}
+.swiper-wrapper .slide-2
+{
+    background-image: url(/assests/product2.webp);
+    margin:10px;
+    background-position: center;
+    background-image: cover;
+    background-repeat: no-repeat;
+}
+.swiper-wrapper .slide-3
+{
+    background-image: url(/assests/product3.webp);
+    margin:10px;
+    background-position: center;
+    background-image: cover;
+    background-repeat: no-repeat;
+}
+.swiper-wrapper .slide-4
+{
+    background-image: url(/assests/product4.webp);
+    margin:10px;
+    background-position: center;
+}
+.swiper-wrapper .swiper-slide .swiper-hover-btn
+{
+    display: flex;
+    align-items: center;
+    height: 25px;
+    justify-content: space-between;
+    position: relative;
+    top:250px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 200ms ease-in-out;
+}
+.swiper-slide:hover .swiper-hover-btn
+{
+    opacity: 1;
+    visibility: visible;
+    top:200px;
+}
+.swiper-slide .fav-btn
+{
+    position:relative;
+    bottom:230px;
+    left:120px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 200ms ease-in-out;
+}
+.swiper-slide:hover .fav-btn
+{
+    bottom:200px;
+    visibility: visible;
+    opacity: 1;
+}
+.deal-container 
+{
+    height:600px;
+    width:100%;
+    display: flex;
+    padding:40px 150px 80px 40px;
+
+}
+.deal-container .deal-details 
+{
+    font-family: 'Montserrat', sans-serif;
+    height:100%;
+    width: 60%;
+    background-color: #dad8d5;
+    display: flex;
+    flex-direction: column;
+    padding:20px;
+    text-align: justify;
+    align-items: center;
+}
+.deal-container .deal-img 
+{
+    height: 100%;
+    width: 40%;
+    background-color: #dad8d5;
+}
+.deal-img img 
+{
+    height: 100%;
+    width: auto;
+}
+.deal-timer 
+{
+    display: flex;
+    flex-direction: column;
+}
+.deal-timer .deal-timer-display 
+{
+    display: flex;
+    width: 400px;
+    justify-content: space-around;
+
+}
+.deal-timer .deal-timer-display h1
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    color:orange;
+    font-size: 40px;
+    font-weight: bolder;
+    height: 100px;
+    background-color: white;
+}
+.deal-timer .deal-date-display
+{
+    padding-left:  15px;
+    display:flex;
+    justify-content: space-around;
+    position: relative;
+    bottom: 40px;
+}
+.deal-container button 
+{
+    border: none;
+    position: relative;
+    height: 150px;
+    width: 100px;
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
+    letter-spacing: 1px;
+    background-color: orange;
+}
+
+.swiper-section-men .swiper-wrapper
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.swiper-section-men .swiper-slide 
+{
+    background-color: red;
+    height: 90%;
+    display: flex;
+    flex-direction: column;   
+
+}
+.swiper-section-men .swiper-slide img 
+{
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+}
+footer
+{
+    height: 400px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(15, 15, 15);
+    justify-content: space-around;
+    width: 100%;
+    padding:50px;
+}
+footer .left 
+{
+    height: 100%;
+    width: 30%;
+    color: white;
+    padding:50px;
+}
+footer .main
+{
+    height: 100%;
+    width: 30%;
+    color: white;
+    padding:20px 40px;
+    display: flex;
+    justify-content: space-around;
+}
+footer .right 
+{
+    height: 100%;
+    width: 30%;
+    color: white;
+    padding:10px 40px;
+}
+footer .right input, button
+{
+    height: 30px; 
+    border: none;   
+    border-color: black;
+    color:white;
+}
+footer .right button
+{
+    background-color: orange;
+    color:white;
+}
