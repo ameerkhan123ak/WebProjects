@@ -10,6 +10,12 @@ This repository contains a collection of my web projects developed using HTML, C
 - Technologies: List the technologies used, such as HTML, CSS, JavaScript, libraries, frameworks, etc.
 - Demo: [Preview Link](https://fashi-webprojects.netlify.app)
 
+### Project 2: Simple Weather App
+
+- Description: Weather App builded with fetchAPI
+- Technologies: List the technologies used, such as HTML, CSS, JavaScript, libraries, frameworks, etc.
+- Demo: [Preview Link](https://simpleweatherapp-khan.netlify.app)
+
 
 ## Usage
 
