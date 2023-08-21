@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emmable Furniture Store</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@700&display=swap" rel="stylesheet"><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/25b9223bba.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+</head>
+<body>
+    <div class="loader-wrapper">
+        <span class="loader"></span>
+    </div>
+    <div class="top-header">
+        <p>support: 300(400)564</p>
+        <p>free shipping worldwide. orders over $500</p>
+        <p style="border:1px solid;padding:0px 10px;cursor: pointer;">Eng<i class="fa-solid fa-caret-down" style="padding-left: 10px;"></i></p>
+    </div>
+    <div class="header-container">
+        <div class="logo"><a href="index.html" style="text-decoration: none;color: black;font-family: sans-serif;">Emmable</a></div>
+        <div class="input-field">
+            <input type="text" placeholder="Search in Emmable">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="user-data">
+            <div class="cart-details">
+                <i class="fa-solid fa-cart-shopping" id="cart-button"></i>
+                <div id="cart-container">
+                    <h3>Cart</h3>
+                    <p>Your cart is empty</p>
+                </div>
+            </div>
+            <i class="fa-solid fa-user"></i>
+        </div>
+    </div>
+    <nav class="description-nav-1">
+        <ul>
+            <div class="nav-room-container">
+                <li id="room-button"><i class="fa-solid fa-caret-down" style="padding-right: 10px;"></i>Room</li>
+                <div class="nav-room-container-description" id="nav-room-container-desc">
+                    <ul>
+                        <li style="color: gray;"><a href="livingroom.html" style="text-decoration: none;color: gray;">Living Room</a></li>
+                        <li>Bedroom</li>
+                        <li>Waranda</li>
+                        <li>Balcony</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="nav-product-container" style="position: relative;">
+                <li id="product-button"><i class="fa-solid fa-caret-down" style="padding-right: 10px;"></i>Product</li>
+                <div id="nav-product-container-description">
+                    <ul>
+                        <li>Sandal</li>
+                        <li>PeekWood</li>
+                        <li>RoseWood</li>
+                        <li>Teak wood</li>
+                    </ul>
+                </div>
+            </div>
+            <li>Collection</li>
+            <li>Contact</li>
+        </ul>
+        <ul>
+            <li><i class="fa-solid fa-location-dot" style="padding-right: 10px;"></i>Store Location</li>
+            <li><i class="fa-solid fa-location-crosshairs" style="padding-right: 10px;"></i>Track your order</li>
+        </ul>
+    </nav>
+    <div class="title-container">
+        <h1 style="font-size: 50px;font-family:sans-serif;text-align: center;">A Furniture that eases your life</h1>
+        <p style="text-align: center;margin-top: -20px;color: rgb(105, 105, 105);">Explore world class top furnitures as per your requirements and choice</p>
+    </div>
+    <div class="front-background-image">
+        <button>Shop now <span class="material-symbols-outlined">chevron_right</span></button>
+    </div>
+    <div class="category-container">
+        <h1 style="text-align: center;">Preferred Category</h1>
+        <div class="categories">
+            <div class="mirror category" style="background-image: url(/assests/mirror.avif);" data-aos="fade-up" data-aos-duration="500">
+                <h2>Mirror</h2>
+            </div>
+            <div class="bed category" style="background-image: url(/assests/bed.avif);" data-aos="fade-up" data-aos-duration="700">
+                <h2 style="padding:10px 78px 20px 77px;">Bed</h2>
+            </div>
+            <div class="cushion category" style="background-image: url(/assests/cushion.avif);" data-aos="fade-up" data-aos-duration="900">
+                <h2 style="padding:10px 50px 20px 62px;">Cushion</h2>
+            </div>
+            <div class="sofa category" style="background-image: url(/assests/sofa.avif);" data-aos="fade-up" data-aos-duration="1100">
+                <h2 style="padding:10px 75px 20px 75px;">Sofa</h2>
+            </div>
+            <div class="chair category" style="background-image: url(/assests/chair.avif);" data-aos="fade-up" data-aos-duration="1300">
+                <h2 style="padding:10px 72px 20px 71px;">Chair</h2>
+            </div>
+            <div class="lamp category" style="background-image: url(/assests/lamp.avif);" data-aos="fade-up" data-aos-duration="1500">
+                <h2 style="padding:10px 69px 20px 69px;">Lamp</h2>
+            </div>
+        </div>
+    </div>
+    <div class="new-product-container-title">
+        <h1 style="font-family: sans-serif;;">New Products</h1>
+        <ul>
+            <li style="border:2px solid blue;color:blue;border-radius: 20px;padding:4px 10px">All Category</li>
+            <li>Furnitures</li>
+            <li>Chairs</li>
+            <li>Decor</li>
+            <li>Lighting</li>
+        </ul>
+    </div>
+    <div class="new-products-container">
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="/assests/slide1.jpg" alt="">
+                    <div class="swiper-description">
+                        <h1 data-aos="fade-up" data-aos-duration="700" data-aos-anchor-placement="center">OFFICE CHAIRS</h1>
+                        <h2 data-aos="fade-up" data-aos-duration="900" data-aos-anchor-placement="center-bottom">Get 50% Off</h2>
+                        <h2 data-aos="fade-up" data-aos-duration="900" data-aos-anchor-placement="center-bottom">Comfortable Office Chairs for Productive Workspaces</h2>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="/assests/slide2.jpg" alt="">
+                    <div class="swiper-description">
+                        <h1 data-aos="fade-up" data-aos-duration="700" data-aos-anchor-placement="center">OFFICE CHAIRS</h1>
+                        <h2 data-aos="fade-up" data-aos-duration="900" data-aos-anchor-placement="center-bottom">Get 50% Off</h2>
+                        <h2 data-aos="fade-up" data-aos-duration="900" data-aos-anchor-placement="center-bottom">Comfortable Office Chairs for Productive Workspaces</h2>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="/assests/slide3.jpg" alt="">
+                    <div class="swiper-description">
+                        <h1 data-aos="fade-up" data-aos-duration="700" data-aos-anchor-placement="center">OFFICE CHAIRS</h1>
+                        <h2 data-aos="fade-up" data-aos-duration="900" data-aos-anchor-placement="center-bottom">Get 50% Off</h2>
+                        <h2 data-aos="fade-up" data-aos-duration="900" data-aos-anchor-placement="center-bottom">Comfortable Office Chairs for Productive Workspaces</h2>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="/assests/slide4.jpg" alt="">
+                    <div class="swiper-description">
+                        <h1 data-aos="fade-up" data-aos-duration="700" data-aos-anchor-placement="center">OFFICE CHAIRS</h1>
+                        <h2 data-aos="fade-up" data-aos-duration="900" data-aos-anchor-placement="center-bottom">Get 50% Off</h2>
+                        <h2 data-aos="fade-up" data-aos-duration="900" data-aos-anchor-placement="center-bottom">Comfortable Office Chairs for Productive Workspaces</h2>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="/assests/sofa grid.jpg" alt="">
+                    <div class="swiper-description">
+                        <h1 data-aos="fade-up" data-aos-duration="700" data-aos-anchor-placement="center">OFFICE CHAIRS</h1>
+                        <h2 data-aos="fade-up" data-aos-duration="900" data-aos-anchor-placement="center-bottom">Get 50% Off</h2>
+                        <h2 data-aos="fade-up" data-aos-duration="900" data-aos-anchor-placement="center-bottom">Comfortable Office Chairs for Productive Workspaces</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <div class="grid-container">
+            <div class="grid-2 grid">
+                <img src="/assests/cofee table grid.jpg" alt="">
+                <div class="grid-product-description">
+                    <h2>Coffee Table</h2>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <span style="padding-left: 10px;">4.5</span>
+                        <p>406 reviews</p>
+                    </div>
+                    <div class="price">
+                        <h3>$18.00</h3>
+                        <p style="text-decoration: line-through;color:gray">$20.00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-3 grid">
+                <img src="/assests/cushion grid.jpg" alt="">
+                <div class="grid-product-description">
+                    <h2>Cushion</h2>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <span style="padding-left: 10px;">3.5</span>
+                        <p>998 reviews</p>
+                    </div>
+                    <div class="price">
+                        <h3>$58.00</h3>
+                        <p style="text-decoration: line-through;color:gray">$60.00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-4 grid">
+                <img src="/assests/office chair grid.jpg" alt="">
+                <div class="grid-product-description">
+                    <h2>Office Chair</h2>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span style="padding-left: 10px;">4.0</span>
+                        <p>206 reviews</p>
+                    </div>
+                    <div class="price">
+                        <h3>$28.00</h3>
+                        <p style="text-decoration: line-through;color:gray">$30.00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-5 grid">
+                <img src="/assests/studio chair 1.webp" alt="">
+                <div class="grid-product-description">
+                    <h2>Sofa</h2>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <span style="padding-left: 10px;">4.5</span>
+                        <p>406 reviews</p>
+                    </div>
+                    <div class="price">
+                        <h3>$68.00</h3>
+                        <p style="text-decoration: line-through;color:gray">$75.00</p>
+                    </div>
+                </div>
+            </div>
+         </div>
+    </div>
+    <div class="one-page-sale-container">
+        <div class="one-page-sale-container-description">
+            <p style="font-family: sans-serif;margin-bottom: -20px;" data-aos="fade-up" data-aos-duration="500">Mega sale upto 75%</p>
+            <h1 data-aos="fade-up" data-aos-duration="500">Fancy Sofa Set</h1>
+            <p style="font-family: sans-serif;line-height: 25px;color: gray;" data-aos="fade-up" data-aos-duration="700">This beautiful sofa set is the perfect addition to any living room. The plush cushions and comfortable design will make you want to curl up and relax for hours on end.</p>
+            <div class="product-container-one-sale" data-aos="fade-up" data-aos-duration="900">
+                <img src="/assests/white lounge chair.jpg" alt="">
+                <div class="product-description-one-sale">
+                    <h2>White Lounge Chair</h2>
+                    <span style="font-size: 25px;font-family: sans-serif;font-weight: bold;margin-right: 10px;">$35.00</span>
+                    <span style="color: gray;text-decoration: line-through;">$50.00</span>
+                </div>
+            </div>
+            <div class="product-container-one-sale" data-aos="fade-up" data-aos-duration="900">
+                <img src="/assests/book case.jpg" alt="">
+                <div class="product-description-one-sale">
+                    <h2>Edward Minimalist Bookcase 2x5</h2>
+                    <span style="font-size: 25px;font-family: sans-serif;font-weight: bold;margin-right: 10px;">$28.72</span>
+                    <span style="color: gray;text-decoration: line-through;">$35.00</span>
+                </div>
+            </div>
+            <div class="button-container" style="display: flex;justify-content: center;">
+                <button data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="top-bottom">
+                    Explore Collection
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+        <div class="one-page-sale-container-image">
+        </div>
+    </div>
+    <div class="collab-brands">
+        <img src="/assests/ace-hardware logo.png" alt="" style="height: 80px;">
+        <img src="/assests/toto.jpg" alt="">
+        <img src="/assests/kitchenaid-logo-vector.png" alt="" style="height: 100px;">
+        <img src="/assests/philips.png" alt="">
+        <img src="/assests/linori.jpg" alt="" style="height: 120px;">
+        <img src="/assests/luminarc.png" alt="" style="height: 120px;">
+        <img src="/assests/herman miller.jpg" alt="" style="height: 120px;">
+        <img src="/assests/steelcase logo.png" alt="" style="height: 20px;position: absolute;top: 200px;left:1170px">
+    </div>
+    <footer>
+        <div class="footer-link">
+            <h1>Emmable</h1>
+            <span>Easy and reliable online buying and selling site</span>
+            <p>Download our app</p>
+            <div class="img-container">
+                <img src="/assests/downloadonpappstorepng.webp" alt="" style="height: 35px">
+                <img src="/assests/downloadonplaysore.png" alt="">
+            </div>
+        </div>
+        <div class="company">
+            <h1>Company</h1>
+            <p>About us</p>
+            <p>Career</p>
+            <p>Privacy Policy</p>
+            <p>Blogs</p>
+            <p>Flash Sale</p>
+            <p>Affilates</p>
+        </div>
+        <div class="buyer company">
+            <h1>Buyer</h1>
+            <p>How to shop</p>
+            <p>Payment method</p>
+            <p>Track Buyer Orders</p>
+            <p>Free Shipping</p>
+            <p>Returns & Funds</p>
+            <p>Guarantee</p>
+        </div>
+        <div class="contact-us">
+            <h1 style="font-family: sans-serif;font-size: 25px;">Contact us</h1>
+            <p><i class="fa-solid fa-phone"></i> (123) 456 7890</p>
+            <p><i class="fa-solid fa-envelope"></i> support@emmable.com</p>
+            <p><i class="fa-solid fa-briefcase"></i> Monday-Friday:09:00-16:00 WIB</p>
+            <div class="social-links">
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+        </div>
+    </footer>
+    <script>
+        //swiper 
+
+        const swiper = new Swiper('.swiper', {
+            loop:true,
+            autoplay: {
+                delay:3000,
+                disableOnInteraction:false
+            }
+        })
+    </script>
+</body>
+</html>
