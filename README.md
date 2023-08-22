@@ -16,6 +16,12 @@ This repository contains a collection of my web projects developed using HTML, C
 - Technologies: List the technologies used, such as HTML, CSS, JavaScript, libraries, frameworks, etc.
 - Demo: [Preview Link](https://64cb5184bf137947dad58ad7--classy-heliotrope-b3d48f.netlify.app)
 
+### Project 3: Emmable Furniture Store
+
+- Description: Frontend Design Web Application
+- Technologies: List the technologies used, such as HTML, CSS, JavaScript, libraries, frameworks, etc.
+- Demo: [Preview Link](https://emmablefurnitureshop.netlify.app/)
+
 
 ## Usage
 
